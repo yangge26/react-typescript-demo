@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>menu_icon_customer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu_icon_customer" stroke="#191919" stroke-width="2">
+            <g id="Page-1" transform="translate(1.000000, 0.000000)">
+                <path d="M1,23 L6.25688168,23 L6.25688168,31 L29,31 L29,14.06 C29,6.85422377 22.9645104,1 15.5046565,1 C7.48705155,1 1,7.29222377 1,15.039 L1,23 Z" id="Stroke-1"></path>
+                <path d="M10,13 C8.89545507,13 8,13.8954551 8,15 C8,16.1056793 8.89532475,17.0012648 10,17.0012648 C11.1046753,17.0012648 12,16.1056793 12,15 C12,13.8954551 11.1045449,13 10,13 Z" id="Stroke-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

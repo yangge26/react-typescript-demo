@@ -1,0 +1,51 @@
+.pre-container {
+    input {
+        min-width: 200px;
+    }
+    .ant-form {
+        text-align: center;
+    }
+    .ant-form-item {
+        margin-bottom: 18px;
+    }
+    .register-btn {
+        margin-top: 108px;
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100% - 30px);
+    }
+}
+
+.select-tenant.ant-row {
+    display: flex;
+    text-align: center;
+    .ant-card {
+        margin-left: 18px;
+        margin-right: 18px;
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: 0px 18px 42px 0px rgba(25, 25, 25, 0.16);
+            &+div {
+                opacity: 1;
+            }
+        }
+        &+div {
+            opacity: 0;
+        }
+        .ant-card-body {
+            padding: 10px;
+        }
+        img {
+            width: 84px;
+            height: 84px;
+        }
+    }
+}
+
+.auth-links {
+    text-align: left;
+    a {
+        color: #666;
+    }
+}

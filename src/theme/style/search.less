@@ -1,0 +1,165 @@
+.ant-input-search {
+    max-width: 444px;
+    &:hover,
+    &:focus,
+    &:active {
+        .ant-input-suffix>button.ant-btn {
+            color: @BU2;
+            border-color: @BU2;
+        }
+    }
+    .ant-input-suffix>button.ant-btn {
+        padding: 0 10px;
+        &>i.anticon-search {
+            &::before {
+                content: none;
+            } // TODO: 与UI沟通所要 搜索icon
+            background-image: url(../imgs/public_icon_search.svg);
+        }
+    }
+    input.ant-input:focus+.ant-input-suffix {
+        outline: none;
+        border-color: @BU2;
+        &>button.ant-btn {
+            border-color: @BU2;
+            outline: 0;
+            -webkit-box-shadow: 1px 0 0 1px rgba(0, 96, 255, 0);
+            box-shadow: 1px 0 0 1px rgba(0, 96, 255, 0);
+        }
+    }
+    .ant-input-suffix {
+        &>button.ant-btn {
+            &.ant-btn-clicked::after {
+                content: none !important;
+                border: none;
+            }
+            background: transparent;
+            color: @BK;
+            border-color: @BK;
+            border-left: none;
+            -webkit-transition: none;
+            -o-transition: none;
+            transition: none;
+        }
+    }
+    &~hr.large {
+        margin-top: 32px;
+    }
+}
+
+.ant-table-thead {
+    th>span {
+        word-break: keep-all;
+    }
+}
+
+.search-panel {
+    // 搜索面板后面默认没有分号
+    .ant-form-item-label label:after {
+        content: none;
+    }
+    .ant-form-item-control {
+        min-width: 204px;
+    }
+    .ant-table-body {
+        overflow: auto;
+        &>table {
+            white-space: nowrap;
+        }
+    }
+    .ant-pagination {
+        float: right;
+    }
+    hr.large {
+        border-color: @GY1;
+    }
+    &>.ant-row:first-child {
+        // 在搜索框不存在时button 做特殊处理
+        &.create-button-container {
+            margin-top: 21px;
+        }
+    }
+    .create-button-container>.ant-btn {
+        min-width: 124px;
+    }
+    .ant-form-item-label {
+        padding-top: 16px;
+        line-height: 20px;
+    }
+    .ant-pagination-item,
+    .ant-pagination-prev,
+    .ant-pagination-next {
+        margin-right: 0px;
+        line-height: 20px;
+        width: 22px;
+        height: 20px;
+        min-width: 22px;
+    }
+    .ant-pagination-total-text,
+    .ant-pagination-options-quick-jumper {
+        color: @GY2;
+    }
+}
+
+input {
+    &::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: @GY3;
+        font-weight: 400;
+    }
+    &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: @GY3;
+        font-weight: 400;
+    }
+    &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: @GY3;
+        font-weight: 400;
+    }
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: @GY3;
+        font-weight: 400;
+    }
+}
+
+// 修正 antd form layout 中的horizontal 应用
+.ant-form.ant-form-horizontal {
+    .ant-form-item {
+        display: inline-block;
+        margin-right: 36px;
+        .ant-select,
+        .ant-input {
+            min-width: 120px;
+        }
+    }
+}
+
+hr.large {
+    margin-bottom: 32px;
+    border-top: 1px solid #eee;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.tier-search-panel {
+    padding-top: 5px;
+    .left-panel {
+        padding-right: 18px;
+        .ant-form {
+            margin-top: 32px;
+            .ant-form-item-label>label {
+                font-size: 16px;
+                color: @GY2;
+            }
+        }
+    }
+    .content-panel {
+        padding-left: 18px;
+    }
+    .create-button-container {
+        min-height: 32px;
+    }
+}

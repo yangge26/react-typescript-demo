@@ -1,0 +1,102 @@
+.right-btn-group {
+    padding-left: 36px;
+    .ant-btn {
+        background: transparent;
+        &.ant-btn-primary {
+            background: @BU2;
+        }
+        &.primary {
+            color: white;
+            background: @BU2;
+            border: none;
+        }
+        width: 100%;
+        margin-top: 16px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.bottom-btn-group {
+    display: flex;
+    justify-content: center;
+    .ant-btn {
+        background: transparent;
+        &.ant-btn-primary {
+            background: @BU2;
+        }
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+.bottom-right-btn-group {
+    display: flex;
+    justify-content: flex-end;
+    .ant-btn {
+        &.ant-btn-primary {
+            background: @BU2;
+        }
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+    color: #fff;
+    background-color: #4183ff;
+    border-color: #4183ff;
+}
+
+.ant-btn.bk {
+    border-color: @BK;
+    color: @BK;
+}
+
+.ant-btn[disabled] {
+    border-color: #a6a6a6 !important;
+}
+
+.ant-btn.secondary {
+    background: transparent !important;
+}
+
+span {
+    .ant-checkbox-inner,
+    .ant-radio-inner {
+        width: 14px;
+        height: 14px;
+    }
+    .ant-radio-inner:after {
+        width: 6px;
+        height: 6px;
+    }
+    .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+        left: 1.4px;
+        top: 5px;
+    }
+    .ant-checkbox-inner:after {
+        left: 3.5px;
+        top: 0.5px;
+    }
+}
+
+.ant-btn.long-add {
+    // 虚线长按钮
+    margin-top: 14px;
+    width: 100%;
+    border-style: dashed;
+    color: @BU2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+}
+
+// 修正多选框横杠错误
+.ant-checkbox.ant-checkbox-indeterminate.ant-checkbox-checked {
+    .ant-checkbox-inner:after {
+        transform: rotate(0deg);
+    }
+}

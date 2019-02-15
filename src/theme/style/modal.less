@@ -1,0 +1,147 @@
+.normal-white {
+    .ant-modal-content {
+        .ant-modal-body,
+        .ant-modal-footer,
+        .ant-modal-header {
+            background-color: @WH;
+        }
+    }
+}
+
+.ant-modal-content {
+    background-color: @GY05;
+    .ant-modal-header {
+        border: none;
+        background-color: @GY05;
+        padding: 16px 32px 0px 32px;
+        .ant-modal-title {
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+    .ant-modal-body {
+        padding: 32px;
+        .ant-form-item {
+            margin-bottom: 8px;
+            &:last-child {
+                // 模态框最后一个表单控件特殊处理
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+        .content-panel-balance {
+            .ant-card {
+                margin-bottom: 16px;
+            }
+        }
+        .ant-form-item-required::before {
+            content: none;
+        }
+        .ant-form-item-required::after {
+            display: inline-block;
+            margin-left: 4px;
+            content: '*';
+            font-family: SimSun;
+            line-height: 1;
+            font-size: 12px;
+            color: #ff4835;
+        }
+    }
+    .ant-modal-close {
+        margin-right: 16px;
+        margin-top: 8px;
+        padding: 8px;
+        color: @BK;
+        .ant-modal-close-x {
+            width: auto;
+            height: auto;
+            line-height: 1em;
+            font-size: 16px;
+        }
+    }
+    .ant-modal-footer {
+        border: none;
+        padding: 0 24px 32px 24px;
+        button {
+            min-width: 64px;
+            padding: 6px 10px;
+            height: auto;
+        }
+    }
+}
+
+.ant-modal.ant-confirm {
+    .ant-modal-close {
+        display: block; // margin-top: 28px;
+        // margin-right: 24px;
+    }
+    .ant-modal-content {
+        background-color: @WH;
+        min-width: 468px;
+    }
+    .ant-confirm-body {
+        min-height: auto;
+        i.anticon.anticon- {
+            display: none;
+        }
+        .ant-confirm-content {
+            margin-left: 0;
+            margin-top: 32px;
+            .ant-form-item .ant-form-item-label {
+                line-height: normal;
+            }
+        }
+        .ant-confirm-title {
+            font-size: 16px;
+        }
+    }
+    .ant-modal-body {
+        padding: 16px 24px 32px 24px;
+        .ant-confirm-btns {
+            margin-top: 32px;
+            &>button.ant-btn {
+                float: right;
+                min-width: 64px;
+                min-height: 32px;
+                &:last-child {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}
+
+// 备份准备还原
+// .ant-modal.ant-confirm {
+//     .ant-modal-close {
+//         display: block;
+//         margin-top: 28px;
+//         margin-right: 24px;
+//     }
+//     .ant-modal-content {
+//         background-color: @WH;
+//         min-width: 468px;
+//     }
+//     .ant-confirm-body {
+//         min-height: 106px;
+//         padding-top: 32px;
+//         i.anticon.anticon- {
+//             display: none;
+//         }
+//         .ant-confirm-title {
+//             font-size: 16px;
+//         }
+//     }
+//     .ant-modal-body {
+//         .ant-confirm-btns {
+//             &>button.ant-btn {
+//                 float: right;
+//                 min-width: 64px;
+//                 min-height: 32px;
+//                 &:last-child {
+//                     margin-right: 16px;
+//                 }
+//             }
+//         }
+//     }
+// }

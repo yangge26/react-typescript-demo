@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>menu_icon_organization_hl</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu_icon_organization_hl" stroke="#0060FF" stroke-width="2">
+            <g id="Page-1">
+                <path d="M19,4 C19,2.34328475 17.6567153,1 16,1 C14.3432847,1 13,2.34328475 13,4 C13,5.65671525 14.3432847,7 16,7 C17.6567153,7 19,5.65671525 19,4 Z" id="Stroke-1"></path>
+                <path d="M7,27 C7,25.3432847 5.65671525,24 4,24 C2.34328475,24 1,25.3432847 1,27 C1,28.6567153 2.34328475,30 4,30 C5.65671525,30 7,28.6567153 7,27 Z" id="Stroke-3"></path>
+                <path d="M19,27 C19,25.3432847 17.6567153,24 16,24 C14.3432847,24 13,25.3432847 13,27 C13,28.6567153 14.3432847,30 16,30 C17.6567153,30 19,28.6567153 19,27 Z" id="Stroke-5"></path>
+                <path d="M31,27 C31,25.3432847 29.6567153,24 28,24 C26.3432847,24 25,25.3432847 25,27 C25,28.6567153 26.3432847,30 28,30 C29.6567153,30 31,28.6567153 31,27 Z" id="Stroke-7"></path>
+                <path d="M16,21 L16,10" id="Stroke-9"></path>
+                <polyline id="Stroke-11" points="28 21 28 15 4 15 4 21"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

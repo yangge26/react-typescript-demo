@@ -1,0 +1,119 @@
+.view_model {
+    table {
+        border-collapse: separate;
+        border-spacing: 0px 15px;
+        padding-left: 6px;
+        padding-top: 6px;
+        margin-left: -6px;
+        margin-top: -6px;
+        .ant-table-thead {
+            tr,
+            th {
+                background: transparent;
+                color: @GY2;
+                border: none;
+                font-weight: 600;
+                padding-bottom: 0;
+            }
+            th:first-child {
+                padding-left: 32px;
+            }
+        }
+        .ant-table-tbody {
+            tr {
+                background: white;
+                border: none;
+                td {
+                    &:first-child {
+                        padding-left: 32px;
+                        border-top-left-radius: 8px;
+                        border-bottom-left-radius: 8px
+                    }
+                    &:last-child {
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                    }
+                }
+            }
+        }
+    }
+    &.action {
+        .ant-table-tbody {
+            tr {
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+                    td {
+                        background: white;
+                    }
+                }
+            }
+        }
+    }
+    .ant-table-placeholder {
+        // text-align: left;
+        padding: 20px 24px;
+        border-radius: 8px;
+    }
+}
+
+table {
+    .ant-table-thead {
+        th {
+            background: transparent;
+            color: @GY2;
+        }
+    }
+}
+
+.soft-table {
+    &>h3 {
+        margin-bottom: 17px;
+    }
+    .ant-card {
+        &.action {
+            &:hover {
+                box-shadow: 0 0 36px rgba(0, 0, 0, 0.16);
+            }
+        }
+        margin-bottom: 36px;
+        border-radius: 4px;
+        border: none;
+        .ant-card-body {
+            padding: 10px 0;
+        }
+        .ant-row {
+            display: flex;
+            padding: 8px 24px; // border-bottom: 1px solid @GY1;
+            &.header {
+                color: @WH;
+                background: @GY3;
+                div[class^='ant-col'] {
+                    border-right: 1px solid @GY2;
+                }
+            }
+            &:first-child {
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+            :first-child {
+                flex: 1;
+            } // 第一个元素占满宽度（用于只有一个子元素的情况下使该元素占满宽度）
+            &:last-child {
+                border: none;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+            div[class^='ant-col'] {
+                padding: 8px 16px;
+                &:first-child {
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+.table-header-title {
+    margin-right: 5px;
+}
