@@ -8,7 +8,7 @@ const DATETIME_FORMAT = 'YYYY-MM-DD hh:mm:ss'
 
 /**
  * 将日期对象转化为固定格式的字符串
- * 
+ *
  * @param {Moment} datetime - 日期对象
  * @return {string}
  */

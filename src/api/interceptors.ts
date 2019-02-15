@@ -3,6 +3,7 @@ import { AxiosInstance } from 'axios'
 import { getAuthStore, resetAuthStore } from 'src/stores/auth'
 import { IResponseData, UNAUTHORIZED } from 'src/models/others/api'
 
+// 添加拦截器
 export default function addInterceptor(http: AxiosInstance) {
     http.interceptors.request.use(config => {
         const authConfig = getAuthStore()
@@ -17,7 +18,7 @@ export default function addInterceptor(http: AxiosInstance) {
             config.headers = {}
         }
         // 添加token
-        config.headers.Authorization =  'Bearer ' + token
+        config.headers.Authorization = 'Bearer ' + token
 
         if (config.url) {
             let url = config.url

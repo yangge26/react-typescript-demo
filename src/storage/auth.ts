@@ -31,7 +31,7 @@ class AuthStorage extends EncryptLocalStorage {
                 }
                 return userInfo as IUserInfo
             } catch (error) {
-                //
+                console.log(error)
             }
         }
         return null

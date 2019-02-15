@@ -2,9 +2,7 @@
  * 通用的 localstorage 操作类
  */
 export class LocalStorage {
-    constructor(protected readonly key: string) {
-        //
-    }
+    constructor(protected readonly key: string) {}
 
     public get value(): string | null {
         return localStorage.getItem(this.key)
@@ -21,5 +19,4 @@ export class LocalStorage {
     public clear() {
         localStorage.removeItem(this.key)
     }
-
 }

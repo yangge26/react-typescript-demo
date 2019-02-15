@@ -12,9 +12,6 @@ import { resetAuthStore } from 'src/stores/auth'
 
 /**
  * 页面头部（面包屑 + 头像）
- *
- * @author Zhuang Jiafeng
- * @since 2018-03-31
  */
 export class AppHeader extends React.Component<{}, {}> {
     public render() {
